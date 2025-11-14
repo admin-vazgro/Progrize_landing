@@ -12,7 +12,7 @@ import aime from '../public/aivme.webp'
 import team from '../public/team.webp'
 import Org from '../public/communityOrg.webp'
 import Lady from '../public/lady.webp'
-
+import CV from "../public/cv.png"
 
 export default function ProgrizeAppSection() {
   const [active, setActive] = useState<"pro" | "org">("pro");
@@ -65,8 +65,8 @@ export default function ProgrizeAppSection() {
           >
 
             {/* CARD 1 — CV OPTIMIZED (Stays standard size) */}
-            <div className="border border-gray-300 rounded-2xl md:col-span-2 md:max-h-[220px] p-6 bg-white md:flex  justify-between gap-6">
-              <div>
+            <div className="border border-gray-300 rounded-2xl md:col-span-2 md:max-h-[220px]  p-6 bg-white md:flex  justify-between gap-6">
+              <div className="max-h-32">
                 <span className="px-4 py-1 bg-[#e1f28d] rounded-full text-xs font-regular">
                   Upcoming
                 </span>
@@ -75,29 +75,14 @@ export default function ProgrizeAppSection() {
                   Beat ATS filters with AI-crafted and expert-reviewed CVs.
                 </p>
               </div>
-              <div className="mt-6 flex justify-center">
-                <div className="relative w-32 h-20">
-                  <svg className="w-full h-full" viewBox="0 0 160 90"> {/* Added viewBox for better scaling */}
-                    <path
-                      d="M10,80 A60,60 0 0,1 150,80"
-                      stroke="#e5e7eb"
-                      strokeWidth="12"
-                      fill="none"
-                    />
-                    <path
-                      d="M10,80 A60,60 0 0,1 150,80"
-                      stroke="#cddc39"
-                      strokeWidth="12"
-                      fill="none"
-                      strokeDasharray="200"
-                      strokeDashoffset={`${200 - (200 * 84) / 100}`}
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                  <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[10%] font-semibold text-xl">
-                    84%
-                  </span>
-                </div>
+                <div className="w-full mt-6 md:mt-0 ">
+                <Image
+                  src={CV}
+                  alt="Mentorship"
+                  width={800}
+                  height={800}
+                  className="w-full max-h-72 md:max-h-44  object-cover rounded-xl"
+                />
               </div>
             </div>
 
@@ -140,7 +125,7 @@ export default function ProgrizeAppSection() {
                   alt="Community"
                   width={800}
                   height={600}
-                  className="w-full h-56 h-72 object-cover rounded-xl"
+                  className="w-full  h-72 object-cover rounded-xl"
                 />
               </div>
             </div>
@@ -175,7 +160,7 @@ export default function ProgrizeAppSection() {
                    width={800}
                   height={600}
                   alt="Community"
-                  className="w-full h-auto h-72 object-cover rounded-xl"
+                  className="w-full h-auto  object-cover rounded-xl"
                 />
               </div>
               <div>
@@ -198,7 +183,7 @@ export default function ProgrizeAppSection() {
                    width={800}
                   height={600}
                   alt="Community"
-                  className="w-full h-auto h-72 object-cover rounded-xl"
+                  className="w-full h-auto object-cover rounded-xl"
                 />
               </div>
               <div>

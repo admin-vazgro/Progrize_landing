@@ -57,7 +57,7 @@ export default function Navbar() {
                 whileInView="show"
                 viewport={{ once: true }}
                 variants={stagger}
-                className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center pb-12 border-b"
+                className="grid grid-cols-1 lg:grid-cols-3 gap-0 md:gap-10 items-center pb-12 border-b"
             >
 
                 {/* LEFT COLUMN — EXACTLY SAME */}

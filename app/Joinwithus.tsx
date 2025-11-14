@@ -21,12 +21,12 @@ export default function JoinUsSection() {
                 </div>
 
                 {/* MAIN TITLE */}
-                <h2 className="text-3xl md:text-5xl font-regular tracking-tight text-gray-900 leading-tight mb-6">
+                <h2 className="text-3xl md:text-5xl font-regular  text-left md:text-center tracking-tight text-gray-900 leading-tight mb-6">
                     Join with us to build this<br />project
                 </h2>
 
                 {/* DESCRIPTION */}
-                <p className="max-w-2xl mx-auto text-gray-800 text-sm md:text-base font-light leading-relaxed mb-12">
+                <p className="max-w-2xl mx-auto text-gray-800 text-left md:text-center text-sm md:text-base font-light leading-relaxed mb-12">
                     Be a part of building this platform with us and gain the proper industry
                     experience that will be a milestone for you.
                 </p>

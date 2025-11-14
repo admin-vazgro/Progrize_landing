@@ -19,16 +19,16 @@ export default function School() {
 
     return (
         <>
-            <motion.section initial="hidden" whileInView="show" viewport={{ once: true }} variants={stagger} className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center pb-32 border-b pt-32">
+            <motion.section initial="hidden" whileInView="show" viewport={{ once: true }} variants={stagger} className="grid grid-cols-1 lg:grid-cols-3 gap-0 md:gap-10 items-center pb-32 border-b pt-32">
 
                 <motion.div variants={fadeUp} className="mt-8 rounded-xl">
-                    <div className="bottom:0px">
+                    <div className="w-auto">
                         <Image
                             src={Schoolimage}
                             width={1300}
                             height={900}
                             alt="Picture of the author"
-                            className="w-full h-120 bottom:0px"
+                            className="w-full h-200 "
                         />
                     </div>
 
